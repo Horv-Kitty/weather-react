@@ -79,7 +79,7 @@ export default function Weather() {
 
       <div className="openSource">
         <a
-          href="https://github.com/Horv-Kitty/weather-app"
+          href="https://github.com/Horv-Kitty/weather-react"
           target="_blank"
           rel="noreferrer"
           className="openSourceLink"
