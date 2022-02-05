@@ -1,8 +1,8 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
+import WeatherIcon from "./WeatherIcon";
 
-import { ReactComponent as RainIcon } from "./rainIcon.svg";
 import "./Weather.css";
 
 export default function WeatherInfo(props) {
@@ -33,7 +33,7 @@ export default function WeatherInfo(props) {
       </div>
       <div className="Weather-type">{props.data.description}</div>
 
-      <RainIcon alt={props.data.type} className="current-icon" />
+      <WeatherIcon data={props.data} />
 
       <div className="row weather-informations">
         <div className="col-sm-4">

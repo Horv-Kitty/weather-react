@@ -1,23 +1,23 @@
-.Weather h1 {
+h1 {
   text-align: center;
   margin-top: 40px;
   font-family: "Ephesis", cursive;
   font-size: 70px;
 }
 
-.Weather .form-control {
+.form-control {
   border: 1px solid #ffbd63;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
 
-.Weather .searching-head {
+.searching-head {
   position: relative;
   left: 20%;
   right: 10%;
 }
 
-.Weather .searchingCurrentLocation {
+.searchingCurrentLocation {
   display: block;
   margin: 0 auto;
   background-color: #4954860c;
@@ -29,13 +29,13 @@
   font-size: 18px;
 }
 
-.Weather .searchingCurrentLocation:hover {
+.searchingCurrentLocation:hover {
   cursor: pointer;
   color: #ffba8c;
   background-color: white;
 }
 
-.Weather .searchingbutton {
+.searchingbutton {
   display: block;
   margin: 0 auto;
   background-color: #ffba8c;
@@ -46,24 +46,24 @@
   transition: all 200ms ease-in-out;
 }
 
-.Weather .searchingbutton:hover {
+.searchingbutton:hover {
   cursor: pointer;
   background-color: #4954860c;
   color: rgb(137, 160, 200);
 }
 
-.Weather .current-time {
+.current-time {
   text-align: center;
   font-size: 20px;
   margin-top: -20px;
 }
 
-.Weather .current-date {
+.current-date {
   text-align: center;
   font-size: 12px;
 }
 
-.Weather .Weather-type {
+.Weather-type {
   font-weight: 200;
   font-size: 26px;
   text-transform: capitalize;
@@ -73,7 +73,7 @@
   text-align: center;
 }
 
-.Weather .currentTemperature {
+.currentTemperature {
   text-align: center;
   margin-top: 10px;
   margin-left: 3%;
@@ -83,41 +83,41 @@
   font-size: 50px;
 }
 
-.Weather .units {
+.units {
   position: relative;
   font-size: 12px;
   top: -25px;
 }
 
-.Weather .Fahrenheit-link {
+.Fahrenheit-link {
   color: rgb(137, 160, 200);
   text-decoration: none;
 }
 
-.Weather .Fahrenheit-link:hover {
+.Fahrenheit-link:hover {
   cursor: pointer;
   color: #ffbd63;
 }
 
-.Weather .Celsius-link {
+.Celsius-link {
   color: #2f2e41;
   text-decoration: none;
 }
 
-.Weather .Celsius-link:hover {
+.Celsius-link:hover {
   cursor: pointer;
   color: #ffbd63;
 }
 
-.Weather .current-icon {
+.current-icon {
   display: block;
   margin: 0 auto;
-  margin-top: -300px;
-  margin-bottom: -300px;
+  margin-top: -250px;
+  margin-bottom: -250px;
   width: 200px;
 }
 
-.Weather .weather-informations {
+.weather-informations {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -126,12 +126,12 @@
   padding: 10px;
 }
 
-.Weather .openSource {
+.openSource {
   text-align: center;
   font-size: 12px;
 }
 
-.Weather .openSourceLink {
+.openSourceLink {
   color: rgb(137, 160, 200);
   text-decoration: none;
 }
