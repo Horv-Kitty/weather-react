@@ -41,7 +41,6 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
-
       <div className="openSource">
         <a
           href="https://github.com/Horv-Kitty/weather-react"
