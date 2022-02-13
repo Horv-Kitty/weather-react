@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import WeatherDailyIcons from "./WeatherDailyIcons";
 
 import "./Weather.css";
 
@@ -20,6 +21,7 @@ export default function Weather(props) {
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       uvIndex: "0",
+      icon: response.weather[0].icon,
     });
   }
 
@@ -63,6 +65,7 @@ export default function Weather(props) {
         </form>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coords} />
+        <WeatherDailyIcons data={weatherData.icon} />
       </div>
     );
   } else {
