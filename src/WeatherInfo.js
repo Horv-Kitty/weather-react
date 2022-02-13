@@ -15,7 +15,7 @@ export default function WeatherInfo(props) {
         <FormattedTime date={props.data.time} />
       </div>
       <div className="current-date">
-        <FormattedDate date={props.data.date} />
+        <FormattedDate date={props.data.time} />
       </div>
 
       <WeatherTemperature celsius={props.data.temperature} />

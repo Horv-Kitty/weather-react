@@ -15,6 +15,7 @@ export default function FormattedDate(props) {
     "November",
     "December",
   ];
+
   let month = months[props.date.getMonth()];
   let day = props.date.getDay();
   if (day < 10) {
