@@ -2,7 +2,6 @@ import React from "react";
 
 export default function FormattedDate(props) {
   let months = [
-    "December",
     "January",
     "February",
     "March",
@@ -14,6 +13,7 @@ export default function FormattedDate(props) {
     "September",
     "October",
     "November",
+    "December",
   ];
   let month = months[props.date.getMonth()];
   let day = props.date.getDay();

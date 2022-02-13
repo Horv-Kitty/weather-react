@@ -20,7 +20,6 @@ export default function Weather(props) {
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       uvIndex: "0",
-      icon: response.data.weather[0].icon,
     });
   }
 
