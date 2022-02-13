@@ -1,9 +1,9 @@
 import React from "react";
+import "./WeatherForecast.css";
+import "./WeatherDailyIcons.css";
 
-import "./Weather.css";
-
-export default function WeatherDailyIcons(props) {
-  if (props.data === "01d") {
+export default function WeatherDailyIcon(props) {
+  if (props.icon === "01d") {
     return (
       <div>
         <i class="fas fa-sun"></i>
@@ -11,7 +11,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "01n") {
+  if (props.icon === "01n") {
     return (
       <div>
         <i class="fas fa-moon"></i>
@@ -19,7 +19,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "02d") {
+  if (props.icon === "02d") {
     return (
       <div>
         <i class="fas fa-cloud-sun"></i>
@@ -27,7 +27,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "02n") {
+  if (props.icon === "02n") {
     return (
       <div>
         <i class="fas fa-cloud-moon"></i>
@@ -36,10 +36,10 @@ export default function WeatherDailyIcons(props) {
   }
 
   if (
-    props.data === "03d" ||
-    props.data === "03n" ||
-    props.data === "04d" ||
-    props.data === "04n"
+    props.icon === "03d" ||
+    props.icon === "03n" ||
+    props.icon === "04d" ||
+    props.icon === "04n"
   ) {
     return (
       <div>
@@ -48,7 +48,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "09d" || props.data === "09n") {
+  if (props.icon === "09d" || props.icon === "09n") {
     return (
       <div>
         <i class="fas fa-cloud-rain"></i>
@@ -56,7 +56,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "10d") {
+  if (props.icon === "10d") {
     return (
       <div>
         <i class="fas fa-cloud-sun-rain"></i>
@@ -64,7 +64,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "10n") {
+  if (props.icon === "10n") {
     return (
       <div>
         <i class="fas fa-cloud-moon-rain"></i>
@@ -72,7 +72,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "11d" || props.data === "11n") {
+  if (props.icon === "11d" || props.icon === "11n") {
     return (
       <div>
         <i class="fas fa-cloud-showers-heavy"></i>
@@ -80,7 +80,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "13d" || props.data === "13n") {
+  if (props.icon === "13d" || props.icon === "13n") {
     return (
       <div>
         <i class="far fa-snowflake"></i>
@@ -88,7 +88,7 @@ export default function WeatherDailyIcons(props) {
     );
   }
 
-  if (props.data === "50d" || props.data === "50n") {
+  if (props.icon === "50d" || props.icon === "50n") {
     return (
       <div>
         <i class="fas fa-smog"></i>

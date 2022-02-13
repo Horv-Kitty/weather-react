@@ -1,0 +1,48 @@
+.far {
+  font-size: 25px;
+  color: #2f2e41;
+  transition: all 200ms ease-in-out;
+}
+
+.fa-sun,
+.fa-cloud-sun,
+.fa-cloud-moon,
+.fa-cloud-moon-rain,
+.fa-cloud-showers-heavy,
+.fa-cloud-rain,
+.fa-moon,
+.fa-cloud,
+.fa-smog {
+  font-size: 25px;
+  color: #2f2e41;
+  transition: all 200ms ease-in-out;
+}
+
+.fa-cloud-sun-rain {
+  font-size: 25px;
+  color: #2f2e41;
+  transition: all 200ms ease-in-out;
+}
+
+.fa-sun:hover {
+  color: #ffbd63;
+}
+
+.fa-cloud:hover,
+.fa-smog:hover,
+.fa-cloud-sun:hover {
+  color: #dbdada;
+}
+
+.fa-cloud-rain:hover,
+.fa-cloud-showers-heavy:hover,
+.fa-cloud-moon-rain:hover,
+.fa-cloud-moon:hover,
+.fa-moon:hover {
+  color: rgb(137, 160, 200);
+}
+
+.far:hover,
+.fa-cloud-sun-rain:hover {
+  color: rgb(137, 160, 200);
+}

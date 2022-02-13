@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
-import WeatherDailyIcons from "./WeatherDailyIcons";
 
 import "./Weather.css";
 
@@ -21,7 +20,7 @@ export default function Weather(props) {
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       uvIndex: "0",
-      icon: response.weather[0].icon,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -65,7 +64,17 @@ export default function Weather(props) {
         </form>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coords} />
-        <WeatherDailyIcons data={weatherData.icon} />
+        <div className="openSource">
+          <a
+            href="https://github.com/Horv-Kitty/weather-react"
+            target="_blank"
+            rel="noreferrer"
+            className="openSourceLink"
+          >
+            Open-source code
+          </a>
+          <span> by Kitti Horvath</span>
+        </div>
       </div>
     );
   } else {
