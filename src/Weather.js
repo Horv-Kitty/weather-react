@@ -54,11 +54,6 @@ export default function Weather(props) {
               <i className="fas fa-search-location"></i>
             </button>
           </span>
-          <span className="col-1">
-            <button type="submit" className="searchingCurrentLocation">
-              <i className="fas fa-map-marker-alt"></i>
-            </button>
-          </span>
         </form>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coords} />

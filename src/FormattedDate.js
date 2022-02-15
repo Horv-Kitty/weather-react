@@ -17,14 +17,6 @@ export default function FormattedDate(props) {
   ];
 
   let month = months[props.date.getMonth()];
-  let day = props.date.getDay();
-  if (day < 10) {
-    day = `0${day}`;
-  }
 
-  return (
-    <div>
-      {day} {month}
-    </div>
-  );
+  return <div>{month}</div>;
 }
