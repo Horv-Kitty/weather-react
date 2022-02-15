@@ -117,6 +117,15 @@ h1 {
   width: 200px;
 }
 
+.current-icon-snow,
+.current-icon-sun {
+  display: block;
+  margin: 0 auto;
+  margin-top: -320px;
+  margin-bottom: -320px;
+  width: 200px;
+}
+
 .weather-informations {
   text-align: center;
   margin-top: 20px;

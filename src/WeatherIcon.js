@@ -9,7 +9,7 @@ import "./Weather.css";
 
 export default function WeatherIcon(props) {
   if (props.data.temperature >= -30 && props.data.temperature <= 0) {
-    return <SnowIcon className="current-icon" />;
+    return <SnowIcon className="current-icon-snow" />;
   }
 
   if (props.data.temperature >= 1 && props.data.temperature <= 17) {
@@ -20,7 +20,7 @@ export default function WeatherIcon(props) {
   }
 
   if (props.data.temperature >= 30 && props.data.temperature <= 60) {
-    return <SunIcon className="current-icon" />;
+    return <SunIcon className="current-icon-sun" />;
   } else {
     return <RainIcon className="current-icon" />;
   }
